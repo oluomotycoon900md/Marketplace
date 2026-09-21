@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-line">
@@ -11,13 +13,13 @@ export function Footer() {
         <div className="flex gap-12 text-sm text-ink/70">
           <div className="flex flex-col gap-2">
             <p className="text-ink">Shop</p>
-            <a href="/products">All products</a>
-            <a href="/products?category=ceramics">Ceramics</a>
+            <Link href="/products">All products</Link>
+            <Link href="/products?category=ceramics">Ceramics</Link>
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-ink">Foundry</p>
-            <a href="/about">About</a>
-            <a href="/account">Account</a>
+            <Link href="/about">About</Link>
+            <Link href="/account">Account</Link>
           </div>
         </div>
       </div>

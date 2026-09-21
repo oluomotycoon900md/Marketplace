@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export function MobileMenuToggle({ links }: { links: { href: string; label: string }[] }) {
   const [open, setOpen] = useState(false);
@@ -24,9 +25,9 @@ export function MobileMenuToggle({ links }: { links: { href: string; label: stri
           <ul className="flex flex-col gap-3">
             {links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-sm text-ink/80" onClick={() => setOpen(false)}>
+                <Link href={link.href} className="text-sm text-ink/80" onClick={() => setOpen(false)}>
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { getProductsByCategory } from '@/lib/products';
 import { ProductGrid } from '@/components/ProductGrid';
 
@@ -26,7 +27,7 @@ export default async function ProductsPage({
 
       <div className="mt-6 flex flex-wrap gap-2">
         {CATEGORIES.map((c) => (
-          <a
+          <Link
             key={c.value}
             href={c.value === 'all' ? '/products' : `/products?category=${c.value}`}
             className={`rounded-full border px-4 py-1.5 text-sm ${
@@ -34,7 +35,7 @@ export default async function ProductsPage({
             }`}
           >
             {c.label}
-          </a>
+          </Link>
         ))}
       </div>
 
