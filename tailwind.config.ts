@@ -5,16 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: '#F7F3EC',
-        ink: '#221F1A',
-        moss: '#5B6B4F',
-        'moss-dark': '#455038',
-        clay: '#B08A5C',
-        line: '#E4DCCB',
+        paper: '#F1F4F7',
+        ink: '#161B22',
+        moss: '#2C6E8E',
+        'moss-dark': '#204E64',
+        clay: '#7D8B99',
+        line: '#DCE3E9',
       },
       fontFamily: {
-        serif: ['var(--font-newsreader)', 'serif'],
-        sans: ['var(--font-inter)', 'sans-serif'],
+        serif: ['var(--font-heading)', 'sans-serif'],
+        sans: ['var(--font-body)', 'sans-serif'],
       },
     },
   },
