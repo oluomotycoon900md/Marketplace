@@ -9,6 +9,12 @@ export function Footer() {
           <p className="mt-2 text-sm text-ink/70">
             A marketplace for small studios and independent makers. Every piece is made, not manufactured.
           </p>
+          <a
+            href="mailto:oluomotycoon900md@gmail.com"
+            className="mt-3 inline-block text-sm text-ink/70 hover:text-ink"
+          >
+            oluomotycoon900md@gmail.com
+          </a>
         </div>
         <div className="flex gap-12 text-sm text-ink/70">
           <div className="flex flex-col gap-2">
