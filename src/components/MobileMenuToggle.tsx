@@ -21,7 +21,7 @@ export function MobileMenuToggle({ links }: { links: { href: string; label: stri
         <span className="sr-only">Menu</span>
       </button>
       {open && (
-        <nav id="mobile-nav" className="absolute inset-x-0 top-full border-b border-line bg-paper px-6 py-4">
+        <nav id="mobile-nav" className="absolute inset-x-0 top-full border-b border-line bg-surface px-6 py-4">
           <ul className="flex flex-col gap-3">
             {links.map((link) => (
               <li key={link.href}>
